@@ -1,0 +1,67 @@
+作业
+1. 三合一
+2. 当天练习独立完成
+3. 参照下列代码,定义函数,计算社保缴纳费用.
+    salary_before_tax = float(input("请输入税前工资："))
+    social_insurance = salary_before_tax * (0.08 + 0.02 + 0.002 + 0.12) + 3
+    print("个人需要缴纳社保费用：" + str(social_insurance))
+4.  参照下列代码,定义函数,计算孩子身高.
+    father_height = float(input("请输入父亲的身高（厘米）:"))
+    mother_height = float(input("请输入母亲的身高（厘米）:"))
+    son_height = (father_height + mother_height) * 0.54
+    print("预测儿子的身高是:" + str(son_height) + "厘米")
+5.  参照下列代码,定义函数,根据课程编号计算课程名称。
+    提示:使用容器统一管理数据
+    if course == "1":
+        print("Python语言核心编程")
+    elif course == "2":
+        print("Python高级软件技术")
+    elif course == "3":
+        print("Web 全栈")
+    elif course == "4":
+        print("网络爬虫")
+    elif course == "5":
+        print("数据分析、人工智能")
+6. 参照下列代码,定义函数,根据年龄,计算对应的人生阶段。
+    age = int(input("请输入年龄："))
+    if age < 0:
+        print("年龄输入有误")
+    elif age <= 6:
+        print("童年")
+    elif age <= 17:
+        print("少年")
+    elif age <= 40:
+        print("青年")
+    elif age <= 65:
+        print("中年")
+    else:
+        print("老年")
+7.  参照下列代码,定义函数,计算折扣。
+    account_type = input("请输入账户类型：")
+    money = float(input("请输入消费金额："))
+    if account_type == "vip":
+        if money < 500:
+            print("享受85折扣")
+        else:
+            print("享受8折扣")
+    else:
+        if money > 800:
+            print("享受9折扣")
+        else:
+            print("原价购买")
+8.  定义函数,获取列表中最大的数字
+    list01 = [170, 160, 180, 165]
+    max_value = list01[0]
+    for i in range(1, len(list01)):
+        if max_value < list01[i]:
+            max_value = list01[i]
+    print(max_value)
+9.  定义函数,对列表进行升序排列
+    list01 = [170, 160, 180, 165]
+10. 定义函数,查找列表中是否存在相同元素(不借助其他容器,自定义算法实现)
+    思想:列表中所有元素进行比较,如果具有相同元素,返回结果True.
+        否则False
+11. (选做)定义函数,将数字列表中所有偶数删除.
+    list01 = [4,55,6,78,66,22,89,90]
+             [55,89]
+    提示:有坑,需谨慎(调试).
